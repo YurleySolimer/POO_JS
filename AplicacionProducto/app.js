@@ -16,6 +16,11 @@ class UI {
 	}
 
 	showMessage () {
-		
+
 	}
 }
+
+//DOM EVENTS
+document.getElementById("product-form").addEventListener("submit", function () {
+	alert("Enviando");
+});
