@@ -7,9 +7,21 @@ class Product {
 }
 
 class UI {
-	addProduct () {
-
-	}
+	addProduct(product) {
+        const productList = document.getElementById('product-list');
+        const element = document.createElement('div');
+        element.innerHTML = `
+            <div class="card text-center mb-4">
+                <div class="card-body">
+                    <strong>Product</strong>: ${product.name} -
+                    <strong>Price</strong>: ${product.price} - 
+                    <strong>Year</strong>: ${product.year}
+                    <a href="#" class="btn btn-danger" name="delete">Delete</a>
+                </div>
+            </div>
+        `;
+        productList.appendChild(element);
+    }
 
 	deleteProduct () {
 
@@ -21,6 +33,13 @@ class UI {
 }
 
 //DOM EVENTS
-document.getElementById("product-form").addEventListener("submit", function () {
-	alert("Enviando");
+document.getElementById("product-form").addEventListener("submit", function (e) {
+	const name = document.getElementById("name").value;
+	const price = document.getElementById("price").value;
+	const year = document.getElementById("year").value;
+
+	const product = new Product(name, price,year);
+	const ui = new UI ();
+	ui.addProduct(product);
+	e.preventDefault();
 });
