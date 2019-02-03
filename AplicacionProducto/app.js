@@ -58,6 +58,11 @@ document.getElementById("product-form").addEventListener("submit", function (e) 
 
 	const product = new Product (name, price,year);
 	const ui = new UI ();
+		
+	if (name == "" || price == "" || year
+		== "") {
+		return ui.showMessage ("Complete fields PLEASE", "danger");
+	}
 	ui.addProduct (product);
 	ui.resetForm (); 
 	ui.showMessage("Product added", "success");
