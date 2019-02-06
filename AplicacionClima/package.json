@@ -2,10 +2,11 @@
   "name": "AplicacionClima",
   "version": "1.0.0",
   "description": "",
-  "main": "Clima.js",
+  "main": "Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "dev": "webpack-dev-server -d"
   },
   "keywords": [],
   "author": "",
