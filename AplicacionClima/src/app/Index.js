@@ -22,7 +22,6 @@ document.getElementById('w-change-btn').addEventListener('click', (e) => {
   storage.setLocationData(city, countryCode);
   fetchWeather();
   e.preventDefault(); 
-
 });
 
 
