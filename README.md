@@ -1,3 +1,5 @@
+##JAVASCRIPT - OBJECT ORIENTED PROGRAMMING
+
 
 Web applications using Javascript and the object-oriented programming paradigm. Several examples where OOP concepts such as classes, constructors, object instances and how objects are related in Javascript are put into practice.
 
