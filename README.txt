@@ -18,3 +18,14 @@ This app create, list, edit and delete products
 ### ![Screenshot](/ProductApp/img/1.png)
 
 
+### QUIZ JS APP
+This is a simple quiz application to practice object orientend programming in Javascript
+### ![Screenshot](/QuizJs/1.png)
+### ![Screenshot](/QuizJs/img/2.png)
+### ![Screenshot](/QuizJs/img/3.png)
+
+
+
+
+
+
